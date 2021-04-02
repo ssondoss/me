@@ -262,3 +262,63 @@ body {
   font-weight: bold;
   color: #fff;
 }
+.lightUp {
+  animation: slideUp 2s infinite;
+
+  transform-origin: center;
+}
+.lightDown {
+  animation: slideDown 2s infinite;
+
+  transform-origin: center;
+}
+@keyframes slideDown {
+  50% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes slideUp {
+  50% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.lightRight {
+  animation: slideright 2s infinite;
+}
+@keyframes slideright {
+  50% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.lightLeft {
+  animation: slideLeft 2s infinite;
+}
+@keyframes slideLeft {
+  50% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
