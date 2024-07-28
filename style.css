@@ -298,11 +298,11 @@ body {
   width: 500px;
 }
 
-.t-md:hover{
+/* .t-md:hover{
   color: #fff !important;
   transition: 0.4s ease-in-out;
 
-}
+} */
 .t-md{
   font-size: 18px;
   line-height: 30px;
