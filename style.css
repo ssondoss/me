@@ -32,9 +32,11 @@ body {
 }
 
 .color-pink2 {
-  color: #a88590 !important;
+  color: #dcbac3 !important;
 }
-
+.color-pink2-bg {
+  background-color: #dcbac3 !important;
+}
 .bg-brown2 {
   background-color: #362a2e !important;
 }
