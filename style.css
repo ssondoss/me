@@ -131,12 +131,7 @@ body {
 }
 
 
-@media screen and (max-width: 990px) and (min-width: 700px) {
-  .line-h {
-    height: 975% !important;
-  }
 
-}
 
 /* @media screen and (max-width: 799px) {
   .line-h{
@@ -489,8 +484,9 @@ body {
 }
 
 .line-h {
-  height: 700%;
+  height: 100%;
   width: 2px;
+  flex-grow: 1;
 }
 
 .projectsList li .project:hover {
