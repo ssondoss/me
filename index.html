@@ -55,10 +55,9 @@
             <h1>Sondos Marshdeh</h1>
             <p class="lead">
               Software Engineer specializing in Angular and Spring Boot,
-              building scalable applications across fintech, POS, and
-              e-commerce domains. Experienced in designing modular frontend
-              architectures, backend services, and integrating external
-              systems.
+              building scalable applications across fintech, POS, and e-commerce
+              domains. Experienced in designing modular frontend architectures,
+              backend services, and integrating external systems.
             </p>
 
             <div class="hero-actions">
@@ -177,8 +176,8 @@
             <p class="eyebrow">Experience</p>
             <h2>Career Timeline</h2>
             <p>
-              Current and parallel software engineering roles across fintech
-              and POS platforms.
+              Current and parallel software engineering roles across fintech and
+              POS platforms.
             </p>
           </div>
           <div class="timeline">
@@ -206,17 +205,34 @@
                 </p>
                 <p><strong>Key Contributions:</strong></p>
                 <ul>
-                  <li>Designed a modular Angular component architecture across trading, account, and platform modules.</li>
-                  <li>Integrated GraphQL APIs in Angular apps for efficient trading and account data handling.</li>
-                  <li>Improved frontend SEO and metadata management for better discoverability and page performance.</li>
-                  <li>Enhanced Angular performance through component optimization, lazy loading, and best practices.</li>
-                  <li>Built an Electron + Angular desktop app to extend trading workflows with OS-level integration.</li>
-                  <li>Supported FE integrations including Voucherify campaigns, XLF localization automation, and service monitoring alerts.</li>
+                  <li>
+                    Designed a modular Angular component architecture across
+                    trading, account, and platform modules.
+                  </li>
+                  <li>
+                    Integrated GraphQL APIs in Angular apps for efficient
+                    trading and account data handling.
+                  </li>
+                  <li>
+                    Improved frontend SEO and metadata management for better
+                    discoverability and page performance.
+                  </li>
+                  <li>
+                    Enhanced Angular performance through component optimization,
+                    lazy loading, and best practices.
+                  </li>
+                  <li>
+                    Built an Electron + Angular desktop app to extend trading
+                    workflows with OS-level integration.
+                  </li>
+                  <li>
+                    Supported FE integrations including Voucherify campaigns,
+                    XLF localization automation, and service monitoring alerts.
+                  </li>
                 </ul>
                 <p>
                   <strong>Skills:</strong> Angular, JavaScript, TypeScript,
-                  RxJS, State Management, SSR, GitHub, GraphQL, Signals,
-                  Node.js
+                  RxJS, State Management, SSR, GitHub, GraphQL, Signals, Node.js
                 </p>
               </div>
             </article>
@@ -251,9 +267,8 @@
                     encryption and signed HTTP requests using RSA and SHA-256.
                   </li>
                   <li>
-                    Migrated an Angular CMS to a plugin-based architecture
-                    using Ivy and AOT, replacing legacy JIT/View Engine
-                    patterns.
+                    Migrated an Angular CMS to a plugin-based architecture using
+                    Ivy and AOT, replacing legacy JIT/View Engine patterns.
                   </li>
                   <li>
                     Engineered a Spring Scheduler and Spring Batch to automate
@@ -261,8 +276,7 @@
                   </li>
                   <li>
                     Developed a real-time chat and video module using WebSocket
-                    and WebRTC with Spring Boot and Angular for signaling
-                    flows.
+                    and WebRTC with Spring Boot and Angular for signaling flows.
                   </li>
                   <li>
                     Applied secure frontend practices to mitigate XSS and CSRF
@@ -301,8 +315,8 @@
                     operations, and branch management.
                   </li>
                   <li>
-                    Integrated payment and wallet systems, loyalty and gift
-                    card payment systems, including redemption flows, balance
+                    Integrated payment and wallet systems, loyalty and gift card
+                    payment systems, including redemption flows, balance
                     validation, and promotional offers integration, supporting
                     secure transaction flows and financial operations within the
                     platform.
@@ -360,7 +374,6 @@
             </p>
           </div>
 
-          <h3 class="divider-title">Collaborative Projects</h3>
           <div class="project-list">
             <article class="project-item">
               <h3>Bitoasis - Cryptocurrency Exchange Platform</h3>
@@ -533,10 +546,6 @@
                 >
               </div>
             </article>
-          </div>
-
-          <h3 class="divider-title">Personal Projects</h3>
-          <div class="project-list">
             <article class="project-item">
               <h3>Talabat-Inspired UI</h3>
               <p>
@@ -554,17 +563,11 @@
                   rel="noopener noreferrer"
                   >Live Demo</a
                 >
-                <a
-                  href="https://github.com/ssondoss/talabat-template.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Source Code</a
-                >
               </div>
             </article>
 
             <article class="project-item">
-              <h3>Real-Time Chat and Video Application (In Progress)</h3>
+              <h3>Real-Time Chat and Video Application</h3>
               <p>
                 Real-time communication product using WebSocket signaling and
                 WebRTC peer-to-peer connectivity.
@@ -578,7 +581,7 @@
             </article>
 
             <article class="project-item">
-              <h3>Advanced Web Text Editor (In Progress)</h3>
+              <h3>Advanced Web Text Editor</h3>
               <p>
                 Building a feature-rich editor with custom media tools, dynamic
                 typography, and planned real-time collaboration.
@@ -789,7 +792,10 @@
       staggerGroups.forEach((selector) => {
         document.querySelectorAll(selector).forEach((item, index) => {
           item.classList.add("reveal");
-          item.style.setProperty("--reveal-delay", `${Math.min(index, 5) * 70}ms`);
+          item.style.setProperty(
+            "--reveal-delay",
+            `${Math.min(index, 5) * 70}ms`,
+          );
           revealObserver.observe(item);
         });
       });
@@ -804,7 +810,10 @@
 
       const setActiveLink = (sectionId) => {
         navLinks.forEach((link) => {
-          link.classList.toggle("active", link.getAttribute("href") === `#${sectionId}`);
+          link.classList.toggle(
+            "active",
+            link.getAttribute("href") === `#${sectionId}`,
+          );
         });
       };
 
