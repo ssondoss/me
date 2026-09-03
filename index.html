@@ -9,10 +9,20 @@
       name="description"
       content="Portfolio of Sondos Marshdeh, software engineer with Angular and Spring Boot experience across fintech, POS, and platform systems."
     />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#ffffff"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#0b0e14"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -22,20 +32,16 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <div class="ambient-bg" aria-hidden="true">
-      <span class="orb orb-one"></span>
-      <span class="orb orb-two"></span>
-      <span class="orb orb-three"></span>
-    </div>
-
     <header class="site-header">
       <div class="container nav-row">
         <a class="logo" href="#hero">
           <span class="logo-mark">SM</span>
-          <span class="logo-text">Software Engineer</span>
+          <span class="logo-text">
+            <span class="logo-name">Sondos Marshdeh</span>
+            <span class="logo-role">Software Engineer</span>
+          </span>
         </a>
         <nav class="main-nav" aria-label="Primary">
-          <a href="#hero">Home</a>
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
@@ -43,55 +49,87 @@
           <a href="#open-source">Open Source</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a class="btn btn-primary btn-sm" href="#contact">Hire Me</a>
       </div>
     </header>
 
     <main>
-      <section id="hero" class="hero section">
+      <section id="hero" class="hero">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Software Engineer (Angular + Spring Boot)</p>
-            <h1>Sondos Marshdeh</h1>
+            <h1>
+              Sondos Marshdeh
+              <span class="hero-title-role"
+                >Software Engineer &middot; Angular &amp; Spring Boot</span
+              >
+            </h1>
             <p class="lead">
-              Software Engineer specializing in Angular and Spring Boot,
-              building scalable applications across fintech, POS, and e-commerce
-              domains. Experienced in designing modular frontend architectures,
-              backend services, and integrating external systems.
+              I build scalable applications across fintech, POS, and e-commerce
+              domains &mdash; designing modular frontend architectures, backend
+              services, and integrations with external systems.
             </p>
 
             <div class="hero-actions">
               <a class="btn btn-primary" href="#experience">View Experience</a>
-              <a class="btn btn-outline" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="#projects">View Projects</a>
             </div>
 
-            <div class="chip-row">
-              <span class="chip">Angular + Spring Boot</span>
-              <span class="chip">TypeScript + Java 8+</span>
-              <span class="chip">REST + GraphQL</span>
-              <span class="chip">Security (JWT, RSA, SHA256)</span>
-              <span class="chip">System Design + Modularity</span>
-              <span class="chip">AWS Cloud Practitioner (In Progress)</span>
-              <span class="chip">Open Source Contributor</span>
+            <div class="hero-keywords">
+              <p class="eyebrow mt-5">Core Stack</p>
+              <div class="tag-row">
+                <span class="tag">Angular</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Java 8+</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">RxJS</span>
+                <span class="tag">NgRx</span>
+                <span class="tag">GraphQL/REST</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">microservices</span>
+                <span class="tag">JWT / RSA / SHA-256</span>
+                <span class="tag">WebMCP</span>
+
+                <span class="tag"
+                  >AWS (IAM, EC2, S3, Lambda, cloudwatch,SNS,SQS)</span
+                >
+              </div>
             </div>
           </div>
 
           <aside class="hero-panel reveal">
             <figure class="profile-card">
               <img
-                src="assets/images/dark-blue.jpeg"
+                src="assets/images/me3.jpeg"
                 alt="Portrait of Sondos Marshdeh"
+                width="1152"
+                height="1310"
               />
-              <figcaption>Based in Amman, Jordan</figcaption>
+              <dl class="profile-facts">
+                <div>
+                  <dt>Location</dt>
+                  <dd>Amman, Jordan</dd>
+                </div>
+                <div>
+                  <dt>Experience</dt>
+                  <dd>5+ years</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Full-stack delivery</dd>
+                </div>
+                <div>
+                  <dt>Open Source</dt>
+                  <dd>2 NPM packages</dd>
+                </div>
+              </dl>
             </figure>
-            <div class="social-grid" aria-label="Social links">
+            <div class="social-row" aria-label="Social links">
               <a
                 href="https://www.linkedin.com/in/sondos-marashdeh-b64806206/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin-in"></i>
               </a>
               <a
                 href="https://github.com/ssondoss"
@@ -110,7 +148,7 @@
                 <i class="fab fa-npm"></i>
               </a>
               <a href="mailto:sondosmarashdeh360@gmail.com" aria-label="Email">
-                <i class="fas fa-envelope"></i>
+                <i class="far fa-envelope"></i>
               </a>
             </div>
           </aside>
@@ -120,14 +158,17 @@
       <section id="about" class="section reveal">
         <div class="container">
           <div class="section-head">
-            <p class="eyebrow">About</p>
-            <h2>Full-Stack Engineering Focus</h2>
-            <p>Core strengths and engineering approach.</p>
+            <p class="section-label">01 &mdash; About</p>
+            <h2>Full-stack engineering focus</h2>
+            <p class="section-desc">
+              Core strengths and the way I approach building and shipping
+              software.
+            </p>
           </div>
-          <div class="cards two-col">
+          <div class="grid-2">
             <article class="card">
               <h3>Key Strengths</h3>
-              <ul class="impact-points">
+              <ul class="list-marked">
                 <li>
                   Building modular Angular applications with reusable component
                   architecture.
@@ -136,7 +177,7 @@
                   Developing Spring Boot services with REST and GraphQL APIs.
                 </li>
                 <li>
-                  Designing secure and transaction-driven systems using JWT and
+                  Designing secure, transaction-driven systems using JWT and
                   cryptographic patterns.
                 </li>
                 <li>
@@ -147,13 +188,13 @@
             </article>
             <article class="card">
               <h3>How I Work</h3>
-              <ul class="impact-points">
+              <ul class="list-marked">
                 <li>
                   Problem solving using OOP, functional programming, and design
                   patterns.
                 </li>
                 <li>
-                  Code modularity and architecture decisions aligned with
+                  Architecture decisions and code modularity aligned with
                   scalability goals.
                 </li>
                 <li>
@@ -170,193 +211,202 @@
         </div>
       </section>
 
-      <section id="experience" class="section reveal">
+      <section id="experience" class="section section-alt reveal">
         <div class="container">
           <div class="section-head">
-            <p class="eyebrow">Experience</p>
-            <h2>Career Timeline</h2>
-            <p>
-              Current and parallel software engineering roles across fintech and
-              POS platforms.
+            <p class="section-label">02 &mdash; Experience</p>
+            <h2>Career timeline</h2>
+            <p class="section-desc">
+              Current and parallel software engineering roles across fintech,
+              enterprise, and POS platforms.
             </p>
           </div>
+
           <div class="timeline">
             <article class="timeline-item">
-              <div class="timeline-date">Sep 2024 - Present</div>
-              <div class="timeline-body">
-                <h3>Software Engineer - BitOasis</h3>
-                <p>09/2024 - Present | Amman, Jordan | Hybrid</p>
-                <p>
-                  Cryptocurrency exchange platform for Bitcoin and 60+
-                  cryptocurrencies.
-                </p>
-                <p>
-                  <strong>Official Website:</strong>
-                  <a
-                    href="https://bitoasis.net/en/home"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >bitoasis.net</a
-                  >
-                </p>
-                <p>
-                  <strong>Tech Stack:</strong> Angular, TypeScript, RxJS,
-                  GraphQL, Node.js, Voucherify, SEO, Slack alerts, Electron
-                </p>
-                <p><strong>Key Contributions:</strong></p>
-                <ul>
-                  <li>
-                    Designed a modular Angular component architecture across
-                    trading, account, and platform modules.
-                  </li>
-                  <li>
-                    Integrated GraphQL APIs in Angular apps for efficient
-                    trading and account data handling.
-                  </li>
-                  <li>
-                    Improved frontend SEO and metadata management for better
-                    discoverability and page performance.
-                  </li>
-                  <li>
-                    Enhanced Angular performance through component optimization,
-                    lazy loading, and best practices.
-                  </li>
-                  <li>
-                    Built an Electron + Angular desktop app to extend trading
-                    workflows with OS-level integration.
-                  </li>
-                  <li>
-                    Supported FE integrations including Voucherify campaigns,
-                    XLF localization automation, and service monitoring alerts.
-                  </li>
-                </ul>
-                <p>
-                  <strong>Skills:</strong> Angular, JavaScript, TypeScript,
-                  RxJS, State Management, SSR, GitHub, GraphQL, Signals, Node.js
-                </p>
+              <div class="timeline-head">
+                <h3 class="timeline-role">Software Engineer</h3>
+                <p class="timeline-when">Sep 2024 &mdash; Present</p>
+              </div>
+              <p class="timeline-org">
+                BitOasis &middot; Amman, Jordan (Hybrid) &middot;
+                <a
+                  href="https://bitoasis.net/en/home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >bitoasis.net</a
+                >
+              </p>
+              <p class="timeline-summary">
+                Cryptocurrency exchange platform for Bitcoin and 60+
+                cryptocurrencies.
+              </p>
+              <ul class="timeline-points">
+                <li>
+                  Designed a modular Angular component architecture across
+                  trading, account, and platform modules.
+                </li>
+                <li>
+                  Integrated GraphQL APIs in Angular apps for efficient trading
+                  and account data handling.
+                </li>
+                <li>
+                  Improved frontend SEO and metadata management for better
+                  discoverability and page performance.
+                </li>
+                <li>
+                  Enhanced Angular performance through component optimization,
+                  lazy loading, and best practices.
+                </li>
+                <li>
+                  Built an Electron + Angular desktop app to extend trading
+                  workflows with OS-level integration.
+                </li>
+                <li>
+                  Supported frontend integrations including Voucherify
+                  campaigns, XLF localization automation, and service monitoring
+                  alerts.
+                </li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Angular</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">RxJS</span>
+                <span class="tag">Signals</span>
+                <span class="tag">GraphQL</span>
+                <span class="tag">SSR</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Electron</span>
+                <span class="tag">Voucherify</span>
+                <span class="tag">SEO</span>
               </div>
             </article>
 
             <article class="timeline-item">
-              <div class="timeline-date">Dec 2021 - Sep 2024</div>
-              <div class="timeline-body">
-                <h3>Software Engineer - ESKADENIA Software</h3>
-                <p>12/2021 - 09/2024 | Amman, Jordan</p>
-                <p>
-                  Software development company delivering solutions in
-                  telecommunications, insurance, enterprise, education,
-                  healthcare, and internet sectors.
-                </p>
-                <p>
-                  <strong>Official Website:</strong>
-                  <a
-                    href="https://eskadenia.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >eskadenia.com</a
-                  >
-                </p>
-                <p>
-                  <strong>Tech Stack:</strong> Angular, TypeScript, JavaScript,
-                  Spring Boot, Spring Scheduler, Spring Batch, WebSocket,
-                  WebRTC, RSA, SHA-256, Spring Boot Actuator
-                </p>
-                <ul>
-                  <li>
-                    Designed and implemented a security layer for end-to-end
-                    encryption and signed HTTP requests using RSA and SHA-256.
-                  </li>
-                  <li>
-                    Migrated an Angular CMS to a plugin-based architecture using
-                    Ivy and AOT, replacing legacy JIT/View Engine patterns.
-                  </li>
-                  <li>
-                    Engineered a Spring Scheduler and Spring Batch to automate
-                    retrieval from external operator APIs.
-                  </li>
-                  <li>
-                    Developed a real-time chat and video module using WebSocket
-                    and WebRTC with Spring Boot and Angular for signaling flows.
-                  </li>
-                  <li>
-                    Applied secure frontend practices to mitigate XSS and CSRF
-                    risks across Angular applications.
-                  </li>
-                </ul>
+              <div class="timeline-head">
+                <h3 class="timeline-role">Software Engineer</h3>
+                <p class="timeline-when">Dec 2021 &mdash; Sep 2024</p>
+              </div>
+              <p class="timeline-org">
+                ESKADENIA Software &middot; Amman, Jordan &middot;
+                <a
+                  href="https://eskadenia.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >eskadenia.com</a
+                >
+              </p>
+              <p class="timeline-summary">
+                Software house delivering solutions across telecommunications,
+                insurance, enterprise, education, healthcare, and internet
+                sectors.
+              </p>
+              <ul class="timeline-points">
+                <li>
+                  Designed and implemented a security layer for end-to-end
+                  encryption and signed HTTP requests using RSA and SHA-256.
+                </li>
+                <li>
+                  Migrated an Angular CMS to a plugin-based architecture using
+                  Ivy and AOT, replacing legacy JIT/View Engine patterns.
+                </li>
+                <li>
+                  Engineered Spring Scheduler and Spring Batch jobs to automate
+                  retrieval from external operator APIs.
+                </li>
+                <li>
+                  Developed a real-time chat and video module using WebSocket
+                  and WebRTC, with Spring Boot and Angular signaling flows.
+                </li>
+                <li>
+                  Applied secure frontend practices to mitigate XSS and CSRF
+                  risks across Angular applications.
+                </li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Angular</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Spring Batch</span>
+                <span class="tag">Spring Scheduler</span>
+                <span class="tag">WebSocket</span>
+                <span class="tag">WebRTC</span>
+                <span class="tag">RSA</span>
+                <span class="tag">SHA-256</span>
+                <span class="tag">Actuator</span>
               </div>
             </article>
 
             <article class="timeline-item">
-              <div class="timeline-date">Jun 2021 - Present</div>
-              <div class="timeline-body">
-                <h3>Software Engineer (Contract) - Link Business Solutions</h3>
-                <p>06/2021 - Present | Remote</p>
-                <p>
-                  POS and business solutions covering order workflows, factory
-                  operations, branch management, and e-commerce integrations.
-                </p>
-                <p>
-                  <strong>Official Website:</strong>
-                  <a
-                    href="https://linkco.jo/ar"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >linkco.jo</a
-                  >
-                </p>
-                <p>
-                  <strong>Tech Stack:</strong> Java, Spring Boot, PostgreSQL,
-                  Hibernate, Angular, SQLite, Cloudflare, Python, MEPS
-                </p>
-                <ul>
-                  <li>
-                    Developed backend services using Java and Spring Boot for
-                    POS workflows including order processing, factory
-                    operations, and branch management.
-                  </li>
-                  <li>
-                    Integrated payment and wallet systems, loyalty and gift card
-                    payment systems, including redemption flows, balance
-                    validation, and promotional offers integration, supporting
-                    secure transaction flows and financial operations within the
-                    platform.
-                  </li>
-                  <li>
-                    Built database migration scripts to transition legacy data
-                    from older database schemas into new relational models
-                    during system revamps.
-                  </li>
-                  <li>
-                    Implemented offline POS capabilities by developing a local
-                    persistence layer using SQLite, allowing stores to continue
-                    processing orders without internet connectivity and
-                    synchronizing data when connectivity is restored.
-                  </li>
-                  <li>
-                    Integrated MEPS payment gateway to support Visa and
-                    card-based transactions within POS and e-commerce checkout
-                    flows.
-                  </li>
-                  <li>
-                    Implemented OTP authentication and notification services,
-                    enabling secure user verification and operational alerts.
-                  </li>
-                  <li>
-                    Built reporting and analytics modules using database queries
-                    and reporting tools to provide operational insights for
-                    business users.
-                  </li>
-                  <li>
-                    Built an image optimization pipeline using a Python service
-                    to perform automated cropping, resizing, and compression for
-                    media assets.
-                  </li>
-                  <li>
-                    Implemented server-side rendering (SSR) for Angular
-                    applications using Cloudflare infrastructure to improve SEO
-                    and page performance.
-                  </li>
-                </ul>
+              <div class="timeline-head">
+                <h3 class="timeline-role">Software Engineer (Contract)</h3>
+                <p class="timeline-when">Jun 2021 &mdash; Present</p>
+              </div>
+              <p class="timeline-org">
+                Link Business Solutions &middot; Remote &middot;
+                <a
+                  href="https://linkco.jo/ar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >linkco.jo</a
+                >
+              </p>
+              <p class="timeline-summary">
+                POS and business solutions covering order workflows, factory
+                operations, branch management, and e-commerce integrations.
+              </p>
+              <ul class="timeline-points">
+                <li>
+                  Developed backend services in Java and Spring Boot for POS
+                  workflows including order processing, factory operations, and
+                  branch management.
+                </li>
+                <li>
+                  Integrated payment, wallet, loyalty, and gift card systems
+                  &mdash; including redemption flows, balance validation, and
+                  promotional offers &mdash; supporting secure transaction and
+                  financial operations.
+                </li>
+                <li>
+                  Built database migration scripts to move legacy data into new
+                  relational models during system revamps.
+                </li>
+                <li>
+                  Implemented offline POS capability with a local SQLite
+                  persistence layer, letting stores keep processing orders
+                  without connectivity and sync once restored.
+                </li>
+                <li>
+                  Integrated the MEPS payment gateway for Visa and card-based
+                  transactions in POS and e-commerce checkout flows.
+                </li>
+                <li>
+                  Implemented OTP authentication and notification services for
+                  secure user verification and operational alerts.
+                </li>
+                <li>
+                  Built reporting and analytics modules to provide operational
+                  insight for business users.
+                </li>
+                <li>
+                  Built an image optimization pipeline in Python for automated
+                  cropping, resizing, and compression of media assets.
+                </li>
+                <li>
+                  Implemented server-side rendering for Angular applications on
+                  Cloudflare infrastructure to improve SEO and page performance.
+                </li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Hibernate</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">Angular</span>
+                <span class="tag">Cloudflare</span>
+                <span class="tag">Python</span>
+                <span class="tag">MEPS</span>
               </div>
             </article>
           </div>
@@ -366,17 +416,60 @@
       <section id="projects" class="section reveal">
         <div class="container">
           <div class="section-head">
-            <p class="eyebrow">Projects</p>
-            <h2>Project Portfolio</h2>
-            <p>
-              Collaborative product delivery, personal projects, and active
-              projects under development.
+            <p class="section-label">03 &mdash; Projects</p>
+            <h2>Project portfolio</h2>
+            <p class="section-desc">
+              Collaborative product delivery, personal projects, hackathon
+              builds, and work currently under development.
             </p>
           </div>
 
-          <div class="project-list">
+          <div class="project-grid">
             <article class="project-item">
-              <h3>Bitoasis - Cryptocurrency Exchange Platform</h3>
+              <span class="project-status">Hackathon</span>
+              <h3>Magpie &mdash; Agent Capability Registry</h3>
+              <p>
+                Browser extension built for the WebMCP Challenge: a cross-site
+                registry of agent capabilities that lets AI agents run
+                multi-step tasks across websites, recording every step and the
+                capability used so runs stay repeatable and traceable.
+              </p>
+              <div class="project-meta">
+                <span>WebMCP</span>
+                <span>Browser Extension</span>
+                <span>React</span>
+                <span>TypeScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://www.magpie.help/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live site</a
+                >
+                <a
+                  href="https://github.com/ssondoss/magpie-webmcp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Source code</a
+                >
+                <a
+                  href="https://github.com/ssondoss/magpie-webmcp/releases"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Install extension</a
+                >
+                <a
+                  href="https://devpost.com/software/magpie-cy3jt0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Devpost submission</a
+                >
+              </div>
+            </article>
+
+            <article class="project-item">
+              <h3>BitOasis &mdash; Cryptocurrency Exchange</h3>
               <p>
                 Frontend and platform engineering contribution in a regulated
                 fintech environment.
@@ -384,27 +477,27 @@
               <div class="project-meta">
                 <span>Fintech</span>
                 <span>Angular</span>
-                <span>Spring Boot</span>
+                <span>GraphQL</span>
               </div>
               <div class="project-links">
                 <a
                   href="https://bitoasis.net/en/home"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Visit Platform</a
+                  >Visit platform</a
                 >
               </div>
             </article>
 
             <article class="project-item">
-              <h3>Content Management System and Website Suite</h3>
+              <h3>CMS and Website Suite</h3>
               <p>
                 Built and maintained CMS capabilities used to deliver multiple
                 websites with dynamic publishing workflows.
               </p>
               <div class="project-meta">
                 <span>CMS</span>
-                <span>Enterprise Websites</span>
+                <span>Enterprise Web</span>
               </div>
               <div class="project-links">
                 <a
@@ -417,7 +510,7 @@
                   href="https://solidarity.com.jo/en/home"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Solidarity Insurance</a
+                  >Solidarity</a
                 >
                 <a
                   href="https://eskadenia.com/"
@@ -441,21 +534,22 @@
             </article>
 
             <article class="project-item">
-              <h3>Linkco - Official Platform</h3>
+              <h3>Linkco &mdash; Official Platform</h3>
               <p>
-                Official website for the founding-engineer product ecosystem.
+                Official website for the product ecosystem I helped build as a
+                founding engineer.
               </p>
               <div class="project-meta">
                 <span>Founding Engineer</span>
-                <span>Product Ecosystem</span>
-                <span>Angular + Spring Boot</span>
+                <span>Angular</span>
+                <span>Spring Boot</span>
               </div>
               <div class="project-links">
                 <a
                   href="https://linkco.jo/ar"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Visit Official Website</a
+                  >Visit website</a
                 >
               </div>
             </article>
@@ -463,22 +557,20 @@
             <article class="project-item">
               <h3>Planet Donuts Platform</h3>
               <p>
-                Founding engineer contribution to a food ordering and business
-                platform for a donut and coffee brand across POS and mobile
-                channels.
+                Food ordering and business platform for a donut and coffee brand
+                across POS and mobile channels.
               </p>
               <div class="project-meta">
                 <span>POS</span>
                 <span>Food Ordering</span>
                 <span>Mobile + Web</span>
-                <span>Founding Engineer</span>
               </div>
               <div class="project-links">
                 <a
                   href="https://planetdonuts.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Visit Platform</a
+                  >Visit platform</a
                 >
               </div>
             </article>
@@ -487,21 +579,18 @@
               <h3>Sallatiy</h3>
               <p>
                 E-commerce platform supporting online ordering and product
-                management, delivered as collaborative founding engineering
-                work.
+                management, delivered as founding engineering work.
               </p>
               <div class="project-meta">
                 <span>E-Commerce</span>
                 <span>Ordering</span>
-                <span>Product Management</span>
-                <span>Founding Engineer</span>
               </div>
               <div class="project-links">
                 <a
                   href="https://sallatiy.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Visit Platform</a
+                  >Visit platform</a
                 >
               </div>
             </article>
@@ -513,8 +602,7 @@
                 product and engineering execution.
               </p>
               <div class="project-meta">
-                <span>Corporate Website</span>
-                <span>Web Platform</span>
+                <span>Corporate Web</span>
                 <span>Founding Engineer</span>
               </div>
               <div class="project-links">
@@ -522,13 +610,13 @@
                   href="https://istatieh.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Visit Platform</a
+                  >Visit platform</a
                 >
               </div>
             </article>
 
             <article class="project-item">
-              <h3>Anardes - Online Education Platform</h3>
+              <h3>Anardes &mdash; Online Education</h3>
               <p>
                 Contributed to interactive education workflows and responsive
                 course experience design.
@@ -542,10 +630,11 @@
                   href="https://anardes.net/new/indexenglish.php"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Visit Platform</a
+                  >Visit platform</a
                 >
               </div>
             </article>
+
             <article class="project-item">
               <h3>Talabat-Inspired UI</h3>
               <p>
@@ -554,20 +643,21 @@
               </p>
               <div class="project-meta">
                 <span>UI Engineering</span>
-                <span>Responsive Design</span>
+                <span>Responsive</span>
               </div>
               <div class="project-links">
                 <a
                   href="https://amazing-clarke-3f5343.netlify.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Live Demo</a
+                  >Live demo</a
                 >
               </div>
             </article>
 
             <article class="project-item">
-              <h3>Real-Time Chat and Video Application</h3>
+              <span class="project-status">In development</span>
+              <h3>Real-Time Chat and Video</h3>
               <p>
                 Real-time communication product using WebSocket signaling and
                 WebRTC peer-to-peer connectivity.
@@ -575,20 +665,20 @@
               <div class="project-meta">
                 <span>Angular</span>
                 <span>Spring Boot</span>
-                <span>WebSocket</span>
                 <span>WebRTC</span>
               </div>
             </article>
 
             <article class="project-item">
+              <span class="project-status">In development</span>
               <h3>Advanced Web Text Editor</h3>
               <p>
-                Building a feature-rich editor with custom media tools, dynamic
-                typography, and planned real-time collaboration.
+                Feature-rich editor with custom media tools, dynamic typography,
+                and planned real-time collaboration.
               </p>
               <div class="project-meta">
                 <span>Rich Text</span>
-                <span>Realtime Features</span>
+                <span>Realtime</span>
                 <span>UI Components</span>
               </div>
             </article>
@@ -596,78 +686,74 @@
         </div>
       </section>
 
-      <section id="skills" class="section reveal">
+      <section id="skills" class="section section-alt reveal">
         <div class="container">
           <div class="section-head">
-            <p class="eyebrow">Skills</p>
-            <h2>Engineering Skills Matrix</h2>
-            <p>
+            <p class="section-label">04 &mdash; Skills</p>
+            <h2>Engineering skills matrix</h2>
+            <p class="section-desc">
               Full-stack capability across frontend, backend, architecture,
               security, integrations, testing, and delivery practices.
             </p>
           </div>
-          <div class="cards three-col">
-            <article class="card skill-card">
+          <div class="grid-3">
+            <article class="card">
               <h3>Frontend Technologies</h3>
-              <ul>
-                <li>Angular (Advanced), TypeScript, JavaScript (ES6+)</li>
+              <ul class="list-marked">
+                <li>Angular (advanced), TypeScript, JavaScript (ES6+)</li>
                 <li>HTML5, CSS3, SCSS, Bootstrap</li>
                 <li>Cross-browser compatibility and WCAG accessibility</li>
-                <li>Dynamic components and reusable UI components</li>
+                <li>Dynamic and reusable UI components</li>
               </ul>
             </article>
-            <article class="card skill-card">
+            <article class="card">
               <h3>Frontend Architecture</h3>
-              <ul>
-                <li>Component architecture and modular frontend structure</li>
+              <ul class="list-marked">
+                <li>Component architecture and modular structure</li>
                 <li>State management with RxJS and NgRx</li>
                 <li>GraphQL client integration</li>
                 <li>Localization and i18n tooling (XLF automation)</li>
               </ul>
             </article>
-            <article class="card skill-card">
+            <article class="card">
               <h3>Backend Technologies</h3>
-              <ul>
+              <ul class="list-marked">
                 <li>Java (8+), Spring Boot, Spring Data JPA, Hibernate</li>
                 <li>Spring Batch and Spring Scheduler</li>
                 <li>REST API design and GraphQL APIs</li>
-                <li>SQL (MySQL, PostgreSQL) and transaction processing</li>
+                <li>SQL (MySQL, PostgreSQL), transaction processing</li>
                 <li>Maven and Gradle</li>
               </ul>
             </article>
-            <article class="card skill-card">
-              <h3>Backend Architecture and Security</h3>
-              <ul>
-                <li>Backend architecture and modular service design</li>
-                <li>API design and integration, data modeling</li>
+            <article class="card">
+              <h3>Architecture &amp; Security</h3>
+              <ul class="list-marked">
+                <li>Modular service design and data modeling</li>
+                <li>API design, integration, and versioning</li>
                 <li>Secure API design and authentication flows</li>
-                <li>JWT authentication, RSA encryption, SHA256 hashing</li>
+                <li>JWT authentication, RSA encryption, SHA-256 hashing</li>
               </ul>
             </article>
-            <article class="card skill-card">
-              <h3>Performance, Integrations</h3>
-              <ul>
-                <li>SEO optimization and web performance optimization</li>
+            <article class="card">
+              <h3>Performance &amp; Integrations</h3>
+              <ul class="list-marked">
+                <li>SEO and web performance optimization</li>
                 <li>Caching strategies and static site generation (Scully)</li>
-                <li>Third-party API integrations and Voucherify integration</li>
-                <li>Service monitoring and alerting, Slack integrations</li>
-                <li>
-                  AWS fundamentals (IAM, EC2, S3, VPC, CloudWatch) and cloud
-                  architecture basics
-                </li>
-                <li>Preparing for AWS Certified Cloud Practitioner</li>
+                <li>Third-party API and Voucherify integrations</li>
+                <li>Service monitoring, alerting, Slack integrations</li>
+                <li>WebMCP &mdash; exposing web app tools to AI agents</li>
+                <li>AWS (IAM, EC2, S3, Lambda, VPC, CloudWatch)</li>
                 <li>Git/GitHub, Bash scripting, CI/CD concepts</li>
               </ul>
             </article>
-            <article class="card skill-card">
-              <h3>Testing and Engineering Practices</h3>
-              <ul>
+            <article class="card">
+              <h3>Practices &amp; Testing</h3>
+              <ul class="list-marked">
                 <li>Unit testing</li>
                 <li>Object-oriented and functional programming</li>
-                <li>Design patterns, system design fundamentals</li>
-                <li>Code modularity and problem solving</li>
+                <li>Design patterns and system design fundamentals</li>
                 <li>Agile/Scrum, code reviews, cross-team collaboration</li>
-                <li>Real-time applications (WebSockets/STOMP, WebRTC)</li>
+                <li>Real-time applications (WebSocket/STOMP, WebRTC)</li>
               </ul>
             </article>
           </div>
@@ -677,53 +763,63 @@
       <section id="open-source" class="section reveal">
         <div class="container">
           <div class="section-head">
-            <p class="eyebrow">Open Source / Packages</p>
-            <h2>Published NPM Packages</h2>
-            <p>
-              I actively contribute to open source by building and maintaining
-              reusable frontend utilities.
+            <p class="section-label">05 &mdash; Open Source</p>
+            <h2>Published NPM packages</h2>
+            <p class="section-desc">
+              I contribute to open source by building and maintaining reusable
+              frontend utilities.
             </p>
           </div>
-          <div class="cards two-col">
-            <article class="card feature-card">
+          <div class="project-grid">
+            <article class="project-item">
               <h3>ngx-lightbox-plus</h3>
               <p>
                 Extended ngx-lightbox with video support and additional
                 functionality for Angular projects.
               </p>
+              <div class="project-meta">
+                <span>Angular</span>
+                <span>NPM</span>
+                <span>Open Source</span>
+              </div>
               <div class="project-links">
                 <a
                   href="https://www.npmjs.com/package/ngx-lightbox-plus"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >NPM Package</a
+                  >NPM package</a
                 >
                 <a
                   href="https://github.com/ssondoss/ngx-lightbox-plus"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Source Code</a
+                  >Source code</a
                 >
               </div>
             </article>
-            <article class="card feature-card">
+            <article class="project-item">
               <h3>special-characters-picker</h3>
               <p>
-                Built a special characters picker to improve text-input
-                workflows and reusable UI behavior in web apps.
+                A special characters picker that improves text-input workflows
+                and reusable UI behavior in web apps.
               </p>
+              <div class="project-meta">
+                <span>NPM</span>
+                <span>UX Utility</span>
+                <span>Open Source</span>
+              </div>
               <div class="project-links">
                 <a
                   href="https://www.npmjs.com/package/special-characters-picker"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >NPM Package</a
+                  >NPM package</a
                 >
                 <a
                   href="https://github.com/ssondoss/special-characters-picker"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Source Code</a
+                  >Source code</a
                 >
               </div>
             </article>
@@ -731,28 +827,47 @@
         </div>
       </section>
 
-      <section id="contact" class="section contact-section reveal">
-        <div class="container contact-wrap">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2>Let's Build Something Great</h2>
-            <p>
-              Open to software engineering roles where Angular and Spring Boot
-              delivery, product quality, and ownership matter.
-            </p>
-          </div>
-          <div class="contact-grid">
-            <a class="contact-item" href="tel:+962798022719">
-              <span>Phone</span>
-              <strong>+962 79 802 2719</strong>
-            </a>
-            <a class="contact-item" href="mailto:sondosmarashdeh360@gmail.com">
-              <span>Email</span>
-              <strong>sondosmarashdeh360@gmail.com</strong>
-            </a>
-            <div class="contact-item">
-              <span>Location</span>
-              <strong>Amman, Jordan</strong>
+      <section id="contact" class="section section-alt reveal">
+        <div class="container">
+          <div class="contact-panel">
+            <div class="contact-copy">
+              <p class="section-label">06 &mdash; Contact</p>
+              <h2>Let's build something great</h2>
+              <p>
+                Open to software engineering roles where Angular and Spring Boot
+                delivery, product quality, and ownership matter.
+              </p>
+              <a
+                class="btn btn-primary"
+                href="mailto:sondosmarashdeh360@gmail.com"
+                >Send an email</a
+              >
+            </div>
+            <div class="contact-grid">
+              <a
+                class="contact-item"
+                href="mailto:sondosmarashdeh360@gmail.com"
+              >
+                <span>Email</span>
+                <strong>sondosmarashdeh360@gmail.com</strong>
+              </a>
+              <a class="contact-item" href="tel:+962798022719">
+                <span>Phone</span>
+                <strong>+962 79 802 2719</strong>
+              </a>
+              <a
+                class="contact-item"
+                href="https://www.linkedin.com/in/sondos-marashdeh-b64806206/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>LinkedIn</span>
+                <strong>sondos-marashdeh</strong>
+              </a>
+              <div class="contact-item">
+                <span>Location</span>
+                <strong>Amman, Jordan</strong>
+              </div>
             </div>
           </div>
         </div>
@@ -760,13 +875,29 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>Copyright © 2026 Sondos Marshdeh. All rights reserved.</p>
+      <div class="container footer-row">
+        <p>&copy; 2026 Sondos Marshdeh. All rights reserved.</p>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a
+            href="https://github.com/ssondoss"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/sondos-marashdeh-b64806206/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </nav>
       </div>
     </footer>
 
     <script>
-      const revealItems = document.querySelectorAll(".reveal");
       const revealObserver = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -776,17 +907,19 @@
             }
           });
         },
-        { threshold: 0.15 },
+        { threshold: 0.12 },
       );
 
-      revealItems.forEach((item) => revealObserver.observe(item));
+      document
+        .querySelectorAll(".reveal")
+        .forEach((item) => revealObserver.observe(item));
 
-      // Stagger animation for repeated blocks without adding classes in HTML.
+      // Stagger repeated blocks without adding classes in the markup.
       const staggerGroups = [
-        ".cards .card",
+        ".grid-2 .card",
+        ".grid-3 .card",
         ".timeline .timeline-item",
-        ".project-list .project-item",
-        ".contact-grid .contact-item",
+        ".project-grid .project-item",
       ];
 
       staggerGroups.forEach((selector) => {
@@ -794,7 +927,7 @@
           item.classList.add("reveal");
           item.style.setProperty(
             "--reveal-delay",
-            `${Math.min(index, 5) * 70}ms`,
+            `${Math.min(index, 4) * 60}ms`,
           );
           revealObserver.observe(item);
         });
@@ -817,10 +950,6 @@
         });
       };
 
-      if (trackedSections.length > 0) {
-        setActiveLink(trackedSections[0].id);
-      }
-
       const navObserver = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -829,7 +958,7 @@
             }
           });
         },
-        { rootMargin: "-42% 0px -48% 0px", threshold: 0 },
+        { rootMargin: "-40% 0px -50% 0px", threshold: 0 },
       );
 
       trackedSections.forEach((section) => navObserver.observe(section));
